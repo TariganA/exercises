@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="survey.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Hobby survey</h1>
+          <p id="description" class="description text-center">
+            Thank you for taking the time to share us about your Hobby
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>What is your hobby?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select your current hobby</option>
+              <option value="student">Read</option>
+              <option value="job">Exercise</option>
+              <option value="learner">Travel</option>
+              <option value="preferNo">Staycation</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Can you make money from your hobby?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitely</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="not-really"
+                type="radio"
+                class="input-radio"
+              />Not really</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="i-hope-so"
+                type="radio"
+                class="input-radio"
+              />I hope so</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              How many hours a week do you spend on your hobby?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="challenges">One hour a week</option>
+              <option value="projects">Three hours a week</option>
+              <option value="community">Five hours a week</option>
+              <option value="openSource">Ten hours a week</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What is a hobby?
+              <span class="clue">(Choose wisely)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="an-activity-done-regularly-in-one's-leisure-time-for-pleasure."
+                type="checkbox"
+                class="input-checkbox"
+              />An activity done regularly in one's leisure time for pleasure.</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="interest-pursued-for-pleasure-or-relaxation-and-not-as-a-main-occupation"
+                type="checkbox"
+                class="input-checkbox"
+              />Interest pursued for pleasure or relaxation and not as a main occupation</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="some-activity-for-killing-time"
+                type="checkbox"
+                class="input-checkbox"
+              />Some activity for killing time</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="your-main-occupation"
+                type="checkbox"
+                class="input-checkbox"
+              />Your main occupation</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="something-against-your-will"
+                type="checkbox"
+                class="input-checkbox"
+              />Something against your will</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="activity-that-against-the-law"
+                type="checkbox"
+                class="input-checkbox"
+              />Activity that against the law</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="activity-that-attracts-someone"
+                type="checkbox"
+                class="input-checkbox"
+              />Activity that attracts someone</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>    
+
+</html>
