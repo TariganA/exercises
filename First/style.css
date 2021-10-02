@@ -1,0 +1,30 @@
+@import url('https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js');
+
+body{
+    background-color: bisque;
+    
+}
+
+#main{
+    margin: 0%;
+}
+
+
+#title{
+    text-align: center;
+}
+
+#img-div{
+    align-content: center;
+    text-align: center;
+    display: grid;
+}    
+
+#image{ 
+    max-width: 100%;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
